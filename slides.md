@@ -1,16 +1,15 @@
 ---
 # try also 'default' to start simple
-theme: seriph
+theme: default
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: p&id_epr.png
 # some information about your slides, markdown enabled
-title: Welcome to Slidev
+title: Ada Community Advocacy
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Ada Community Advocacy
+  Fostering a healthy ecosystem for the future of Ada
 
-  Learn more at [Sli.dev](https://sli.dev)
 # apply any unocss classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -24,98 +23,213 @@ transition: slide-left
 mdc: true
 ---
 
-# Welcome to Slidev
+# Ada Community Advocacy
 
-Presentation slides for developers
+### Fostering a healthy ecosystem for the future of Ada
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
+Fernando Oleo Blanco - Irvise
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# Contents
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+What to expect
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- Introduce myself
 
-<br>
-<br>
+- Difference between formal & organised community and the _Outer Wilds_
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+- _Bob Dylan - The Times They Are A-Changin'_
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
+- Being efficient, fosterin and selling Ada
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+- Future? Hopefully a bright one!
 
-<!--
-Here is another comment.
--->
+## Community discussion, **feel free to participate & interrupt!**
+
+The presentation style is going to be *very* informal
 
 ---
-transition: slide-up
-level: 2
+layout: image-right
+image: https://irvise.xyz/main-profile-cropped.jpg
 ---
 
-# Navigation
+# `whoami`
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+- Fer, the original since 1997 :)
+   - Irvise in the net
+- Industrial and mechanical engineer
+   - Materials, thermals, fluids
+- Currently working in the nuclear sector
+   - System designer (P&IDs, cycles, components...), no programming!
+- Huge [Libre Software](https://www.gnu.org/philosophy/free-sw.en.html) aficionado
+   - Full-time Linux since 18
+- And what about Ada?
+  - Hopefully my point of view enhances yours
 
-## Keyboard Shortcuts
+---
+layout: two-cols
+layouClass: gap-16
+---
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+# Programming history
 
-<!-- https://sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+- `Hello World!` in Ruby at... 16?
+- Functions, loops, ifs and Fibonacci in Python 3
+- University, bachellor
+  - C (for embedded systems)
+  - Matlab
+  - Operational Research...
+  - ???
+- Industrial Eng. Master
+  - Function Blocks, Structured Text, Sequential Function Charts, Ladder (PLC)
+  
+::right::
+
+<v-click>
+
+# Fortran 66
+
+[FRAPTRAN-2.0](https://fast.labworks.org/), nuclear safety analysis (LOCA)
+
+Very well written, documented, commented and structured.
+
+```f77
+      COMMON A/B
+C     COMMENT
+      X=KODE(J)
+      IF (X.LT.0) GO TO 55
+      IF (X.EQ.0) GO TO 55
+      GO TO 40
+
+55    CALL SOMETHING(INTPUT, OUTFLOAT)
+```
+</v-click>
+
+<v-click>
+<br>
+We can do better!
+</v-click>
+
+<v-click>
+
+- **Fortran 2003-2023**
+- C/C++?
+- [Frama-C](https://frama-c.com/), [seL4](https://sel4.systems/)?
+
+[*Real Programmers Don't Use PASCAL*](https://homepages.inf.ed.ac.uk/rni/papers/realprg.html)
+
+</v-click>
+
+---
+layout: two-cols
+layoutClass: gap-16
+---
+
+
+<div v-click.hide="3">
+
+# Enter... Ada
+
+- "Formally verified with [SPARK](https://learn.adacore.com/courses/intro-to-spark/index.html)"
+- "Readable and easy to learn"
+- "Efficient, low level, compiled and without GC"
+- "Used in the army, aeronautical and space"
+- ...
+
+<div v-click="[1, 3]">
+
+## 🤔🧐
+```ada
+with Ada.Text_IO;
+
+procedure My_Hello_World is
+begin
+   Ada.Text_IO.Put_Line ("Hello, World!");
+end My_Hello_World;
+```
+
+Mmmm...
+
+</div>
+</div>
+
+<div v-click="3" class="absolute left-30px top-10px">
+
+![Poggers](/poggers.jpeg)
+
+</div>
+
+::right::
+
+<div v-click="2">
+
+```ada
+-- 18.3 Memory Map
+type UART_Type is record
+   txdata : txdata_Type with Volatile_Full_Access => True;
+   rxdata : rxdata_Type with Volatile_Full_Access => True;
+   txctrl : txctrl_Type with Volatile_Full_Access => True;
+   rxctrl : rxctrl_Type with Volatile_Full_Access => True;
+   ie     : ie_Type     with Volatile_Full_Access => True;
+   ip     : ip_Type     with Volatile_Full_Access => True;
+   div    : div_Type    with Volatile_Full_Access => True;
+end record
+   with Size => 7 * 32;
+for UART_Type use record
+   txdata at 16#00# range 0 .. 31;
+   rxdata at 16#04# range 0 .. 31;
+   txctrl at 16#08# range 0 .. 31;
+   rxctrl at 16#0C# range 0 .. 31;
+   ie     at 16#10# range 0 .. 31;
+   ip     at 16#14# range 0 .. 31;
+   div    at 16#18# range 0 .. 31;
+end record;
+UART0_BASEADDRESS : constant := 16#1001_3000#;
+UART0 : aliased UART_Type
+   with Address    => System'To_Address (UART0_BASEADDRESS),
+        Volatile   => True,
+        Import     => True,
+        Convention => Ada;
+```
+
+</div>
+
+---
+---
+
+# My beginning
+
+<Youtube id="YPD9U4Wuh5A" width="875" height="430"/>
+
+---
+transition: fade-out
+---
+
+# Continuation
+
+1. Started using [AVRAda](https://github.com/RREE/AVRAda_Examples) and gave some feedback
+2. Ada and RISC-V? Lets goooo [HiFive Rev B](https://www.sifive.com/boards/hifive1-rev-b)
+   1. Helped get the Rev B up and running in [`Ada_Drivers_Library`](https://github.com/AdaCore/Ada_Drivers_Library/commit/c958bb1d7fdf941b14b96eea61a78edb77216a10)
+3. [NetBSD](http://netbsd.org/) runs everywhere... and so does Ada...
+   1. With the huge help of [J. Marino](http://www.ravenports.com/), updated [GNAT 10](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/lang/gcc10-aux/index.html) in [pkgsrc](https://www.pkgsrc.org/)
+4. [Dirk Craynest](https://archive.fosdem.org/2020/schedule/speaker/dirk_craeynest/) was stepping down from organising the Ada Devroom @ FOSDEM 
+   1. No body stood up for 2022, so I did
+      1. I really liked the Ada videos in FOSDEM, specially [J-P's Introduction to Ada](https://archive.fosdem.org/2018/schedule/event/ada_introduction/)
+      2. I did not want it to die...
+   2. (Virtual) Room in 2022
+   3. Stand in 2023
+   4. Nothing in 2024...
+5. Ada was dying... something had to be done... [Ada Monthly Meeting](https://forum.ada-lang.io/t/ada-monthly-meeting/384)
+
+---
+layout: center
+class: text-center
+---
+
+# Focus on informal & amateur communities
 
 ---
 layout: two-cols
@@ -161,8 +275,6 @@ doubled.value = 2
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
 <!-- Footer -->
 [^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
 
@@ -603,11 +715,6 @@ Double-click on the draggable elements to edit their positions.
 ```
 
 <v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/multiple-entries.md
-hide: false
----
 
 ---
 
