@@ -1,6 +1,6 @@
 ---
 # try also 'default' to start simple
-theme: default
+theme: default #apple-basic
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: p&id_epr.png
@@ -21,13 +21,20 @@ drawings:
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
+
+colorScheme: light
+
+fonts:
+  sans: 'Mona Sans'
+  mono: 'Monaspace Neon'
+  local: 'Mona Sans, Monaspace Neon'
 ---
 
 # Ada Community Advocacy
 
 ### Fostering a healthy ecosystem for the future of Ada
 
-Fernando Oleo Blanco - Irvise
+Fernando Oleo Blanco - [Irvise](https://irvise.xyz/)
 
 ---
 transition: fade-out
@@ -41,9 +48,9 @@ What to expect
 
 - Difference between formal & organised community and the _Outer Wilds_
 
-- _Bob Dylan - The Times They Are A-Changin'_
+- Being efficient, fostering and selling Ada
 
-- Being efficient, fosterin and selling Ada
+- _Bob Dylan - The Times They Are A-Changin'_
 
 - Future? Hopefully a bright one!
 
@@ -53,7 +60,7 @@ The presentation style is going to be *very* informal
 
 ---
 layout: image-right
-image: https://irvise.xyz/main-profile-cropped.jpg
+image: ./Fer_ASDEX-1.jpg
 ---
 
 # `whoami`
@@ -61,9 +68,9 @@ image: https://irvise.xyz/main-profile-cropped.jpg
 - Fer, the original since 1997 :)
    - Irvise in the net
 - Industrial and mechanical engineer
-   - Materials, thermals, fluids
+   - Materials, thermals, fluids, FEM
 - Currently working in the nuclear sector
-   - System designer (P&IDs, cycles, components...), no programming!
+   - Systems engineer (P&IDs, cycles, components...), no programming!
 - Huge [Libre Software](https://www.gnu.org/philosophy/free-sw.en.html) aficionado
    - Full-time Linux since 18
 - And what about Ada?
@@ -80,7 +87,7 @@ layouClass: gap-16
 - Functions, loops, ifs and Fibonacci in Python 3
 - University, bachellor
   - C (for embedded systems)
-  - Matlab
+  - Matlab, Simulink
   - Operational Research...
   - ???
 - Industrial Eng. Master
@@ -94,7 +101,7 @@ layouClass: gap-16
 
 [FRAPTRAN-2.0](https://fast.labworks.org/), nuclear safety analysis (LOCA)
 
-Very well written, documented, commented and structured.
+Very well written, documented, commented and structured
 
 ```f77
       COMMON A/B
@@ -110,7 +117,7 @@ C     COMMENT
 
 <v-click>
 <br>
-We can do better!
+Can we do better?
 </v-click>
 
 <v-click>
@@ -135,7 +142,7 @@ layoutClass: gap-16
 
 - "Formally verified with [SPARK](https://learn.adacore.com/courses/intro-to-spark/index.html)"
 - "Readable and easy to learn"
-- "Efficient, low level, compiled and without GC"
+- "Efficient, high & low level, compiled and without GC" --- Blazingly f*cking fast
 - "Used in the army, aeronautical and space"
 - ...
 
@@ -205,16 +212,17 @@ UART0 : aliased UART_Type
 <Youtube id="YPD9U4Wuh5A" width="875" height="430"/>
 
 ---
-transition: fade-out
+transition: fade
 ---
 
-# Continuation
+# Work done in Ada
 
-1. Started using [AVRAda](https://github.com/RREE/AVRAda_Examples) and gave some feedback
+1. Started using [AVRAda](https://github.com/RREE/AVRAda_Examples), gave and received some feedback
 2. Ada and RISC-V? Lets goooo [HiFive Rev B](https://www.sifive.com/boards/hifive1-rev-b)
    1. Helped get the Rev B up and running in [`Ada_Drivers_Library`](https://github.com/AdaCore/Ada_Drivers_Library/commit/c958bb1d7fdf941b14b96eea61a78edb77216a10)
-3. [NetBSD](http://netbsd.org/) runs everywhere... and so does Ada...
-   1. With the huge help of [J. Marino](http://www.ravenports.com/), updated [GNAT 10](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/lang/gcc10-aux/index.html) in [pkgsrc](https://www.pkgsrc.org/)
+3. [NetBSD](http://netbsd.org/) runs everywhere... and so does Ada in theory...
+   1. With the huge help of [J. Marino](http://www.ravenports.com/), updated [GNAT 10](https://cdn.netbsd.org/pub/pkgsrc/current/pkgsrc/lang/gcc10-aux/index.html) in [pkgsrc](https://www.pkgsrc.org/) (`x86*` only)
+   ---
 4. [Dirk Craynest](https://archive.fosdem.org/2020/schedule/speaker/dirk_craeynest/) was stepping down from organising the Ada Devroom @ FOSDEM 
    1. No body stood up for 2022, so I did
       1. I really liked the Ada videos in FOSDEM, specially [J-P's Introduction to Ada](https://archive.fosdem.org/2018/schedule/event/ada_introduction/)
@@ -222,7 +230,7 @@ transition: fade-out
    2. (Virtual) Room in 2022
    3. Stand in 2023
    4. Nothing in 2024...
-5. Ada was dying... something had to be done... [Ada Monthly Meeting](https://forum.ada-lang.io/t/ada-monthly-meeting/384)
+5. Ada was dying... something had to be done... [Ada Monthly Meeting](https://forum.ada-lang.io/t/ada-monthly-meeting/384) started in 2023
 
 ---
 layout: center
@@ -234,519 +242,315 @@ class: text-center
 ---
 layout: two-cols
 layoutClass: gap-16
+transition: fade
 ---
 
-# Table of contents
+# The formal side of the Ada community
 
-You can use the `Toc` component to generate a table of contents for your slides:
+Ada has had a long and stablished professional community:
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+- [Ada-Europe](http://www.ada-europe.org/)
+  - And the different national assemblies
+- [SIGAda](https://sigada.org/) (RIP?)
+- [WG-9](https://www.open-std.org/jtc1/sc22/wg9/), the ones building the ISO standard
+- [AdaCore](https://www.adacore.com/)
+- Army
+- Aerospace
+- ...
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+<v-click>
+But I am not going to talk about them here
+</v-click>
 
 ::right::
 
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
-
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover![^1]
-
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<!-- Footer -->
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
 <v-click>
 
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
+# The informal side of the Ada community
 
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
+Hackers, newbies, tinkers... A mostly decentralised buch of great people
+
+- IRC, `#ada` in [Libera.chat](https://libera.chat/)
+- [C.L.A](https://usenet.ada-lang.io/comp.lang.ada/), USENET
+- [Telegram](https://t.me/ada_lang)
+- [Matrix/Gitter/Element](https://gitter.im/ada-lang/Lobby)
+- [Discord](https://discord.gg/edM2czVKN4)
+- [Reddit](https://www.reddit.com/r/ada/)
+- [**Ada-Lang**](https://ada-lang.io/)
+  - And its [forum](https://forum.ada-lang.io/)
 
 </v-click>
 
-<div mt-20 v-click>
+<v-click>
 
-[Learn More](https://sli.dev/guide/animations#click-animations)
+This group will be my focus, as I feel this is of extreme importance for Ada's future
 
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <carbon:arrow-up />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+</v-click>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Success, a story told in two acts
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+---
+---
+
+# Ada is great, don't we all agree?!
+Yes, it may not be perfect for every case but...
+
+### Ada is obviously successful, isn't it?
+
+- Great typing system!
+  - The modern programming world favours types, see [**Rust**](https://www.rust-lang.org/), [**TypeScript**](https://www.typescriptlang.org/), [**Python 3**](https://docs.python.org/3/library/typing.html), [Gleam](https://gleam.run/index.html), [Elixir](https://elixir-lang.org/blog/2023/06/22/type-system-updates-research-dev/), Swift, Kotlin, Dart, Go, [even f*cking PHP](https://www.php.net/manual/en/language.types.declarations.php)...
+- Great readability and clean syntax! Python, Lua-like (yes, Pascal)
+- Ease of learning! So much so, that new people point out that it is *too verbose,* **what a compliment!**
+- Great module system! Unlike some very well-known languages that are just as old...
+- Amazing features!
+  - [Tasking](https://learn.adacore.com/courses/intro-to-ada/chapters/tasking.html), [Contracts](https://learn.adacore.com/courses/intro-to-ada/chapters/contracts.html), [`C` interop](https://learn.adacore.com/courses/intro-to-ada/chapters/interfacing_with_c.html), [WASM](https://blog.adacore.com/use-of-gnat-llvm-to-translate-ada-applications-to-webassembly), nice standard library, great embedded support...
+- Mature: stable, well-understood, documented, with high-quality learning resources...
+- [SPARK](https://learn.adacore.com/courses/intro-to-spark/index.html), state-of-the-art formal verification
+- People who (properly) learn it, [praise it](https://www.youtube.com/watch?v=MUISz2qA640) even [when they struggle](https://forum.ada-lang.io/t/making-a-game-in-ada-with-raylib/704)
+
+---
+---
+
+# What is success for a language (and its community)
+
+Sucess... is...
+
+<v-click>
+
+$Succ_{theory} = f(features, optimisations, libraries, ease\_of\_use, robustness, readiness...)$
+
+</v-click>
+
+<v-click>
+
+Ada should be pretty much perfect except for:
+
+- Prototyping or scripting: [Lua](https://github.com/Nikokrock/ada-lua), [Python 3](https://github.com/AdaCore/gnatcoll-bindings/tree/master/python3)
+  - Check out [HAC](https://github.com/zertovitch/hac) and [SPARforte](https://sparforte.com/) for some Ada-based scripting!
+- Dynamic, meta-programming: [Scheme](https://www.scheme.org/), [LISP](https://lisp-lang.org/), [Forth](https://forth-standard.org/)
+<v-click>
+
+- **Harder issues:** fast-paced world, time-to-market, prototyping, MVP...
+   - <span class="text-sm"> [How to Build a Product that Scales into a Company](https://www.youtube.com/watch?v=r-98YRAF1dY&t=440s) *"You have to spend twice as much $ taking a product to market"* </span>
+
+</v-click>
+
+</v-click>
+
+<v-click>
+
+### Reality hits hard
+
+<div class="text-center">
+
+$Succ_{real} = Succ_{theory} \cdot \eta$
+
+</div>
+
+In this case, $\eta$ means efficiency, effectiveness to bring that theoretical potential to reality...
+
+</v-click>
+
+<v-click>
+
+<div class="text-center">
+
+For Ada, $\eta$ is... quite low
+
+</div>
+
+</v-click>
+
+---
+layout: two-cols
+layoutClass:
+---
+
+# The community **is** the reflection of efficiency
+Why do communities exist and what do the represent?
+
+Communities are built around percieved value:
+- Interesting?
+- Fun or enjoyable?
+- Profitable?
+- Fulfilling or productive, maybe good-enough?
+- Ease of access and/or ease of learning?
+- Modern or trendy?
+- Honor or tradition?
+- Requirement, such as certification or debt?
+- **Sense of belonging or community?**
+
+::right::
+
+<v-click>
+
+<br>
+
+# Ada's case
+A different story in my opinion...
+
+<br>
+<br>
+<br>
+
+- Very interesting and capable
+- Less fun? Focused on getting sh*t done
+- Few jobs available
+- Yes, if you care about quality
+- Yes and no?
+- ...
+- Some?
+- Yes, legacy and technical debt...
+- **???**
+
+</v-click>
+
+---
+---
+
+# New and old problems to foster a healty, growing & sustainable community
+
+<v-clicks depth="2">
+
+- Companies want programmers, programmers want jobs...
+  - Chicken and egg problem, and Ada is losing it
+  - Every other new programming language **had to deal with the same issue!**
+- Programmers want ease of use and a wealth of libraries
+  - The community (professional and informal ones) do not have much to offer
+  - [Alire](https://alire.ada.dev/) is closing the discovery gap
+- Newbies and professionals want **lots of resources the way they want them!!!!**
+  - Books ✅. Forums ✅ chats ✅ (though quite new and underutilised)
+  - Videos (like Youtube)? Blogs? "Unrelated" forums, conferences chats? University?
+    - **Times are changing old men**
+      - Trends rule the modern day, success will in the end be based on merits
+- **Are you proud of being part of the Ada community? Are we  accessible to newcomers?**
+
+</v-clicks>
+
+---
+---
+
+# A sense of belonging, visibility and sustainability I
+Ada runs on a shoe-string budget
+
+### Help other Ada users... and yourselves!
+<br>
+
+- [Apple / OSX / Mac](https://github.com/simonjwright/building-gcc-macos-native) supported by only one person, [Simon J. Wright](https://github.com/simonjwright)
+  - Also quite a lot of ARM!
+- SweetAda is developed solely by [Gabriele Galeotti](https://www.linkedin.com/in/gabriele-galeotti-92921019?trk=public_post_feed-actor-name&original_referer=https%3A%2F%2Fwww.linkedin.com%2F)
+  - Single showcase of multiarch support in Ada
+- [AdaCore](https://www.adacore.com/) is still the driving force
+  - While there has been friction in the past, lets try to cooperate
+- Some younger folks would be welcomed!
+  - The average age of the tipical Ada programmer is... a bit high
+
+<v-click>
+
+## Efficiency is key here! If you have something cool, promote it!
+
+</v-click>
+
+---
+---
+
+# A sense of belonging, visibility and sustainability II
+The community is quite small, but incredibily knowledgeable
+
+### Show the world!
+- Show the rest of the community and the wider programming world what we are capable of!
+  - The topics in this conferece are a testament on how *cool* we are!
+  - Be proud of and talk about them!
+
+<v-click>
+
+### Help lower the barrier of entry
+
+- Updated learning methods, more dynamic and accesible ones... **Documentation is key!**
+  - [Learn.AdaCore](https://learn.adacore.com/) & [Ada-Lang](https://ada-lang.io/) are great, but not enough
+  - Libraries and tools also need their docs, just look at Rust!
+- Help with questions, share best practices, tricks
+  - A bigger community greatly helps here
+- Better tooling and libs
+  - [Alire](https://alire.ada.dev/) & [GetAda](https://www.getada.dev/)
+  - Need to improve OS support and basic libraries/tools
+
+</v-click>
+
+---
+layout: image-right
+image: ./steveballmersweat.gif
+---
+
+# Utilise the resources around us
+
+Developers, develpers, developers, (& marketing)
+
+- "This would be better written in Ada"
+  - Be efficient, reuse C libs, showcase value-added Ada
+
+<v-click>
+
+- Participate in events!
+  - Google Summer of Code (GSoC)
+    - Even [GNU Cobol](https://summerofcode.withgoogle.com/programs/2024/projects) is there!
+    - [Fortran-Lang](https://summerofcode.withgoogle.com/programs/2024/organizations/fortran-lang) too!
+  - Language conferences
+    - General ones and **formal verification**
+
+</v-click>
+
+---
+---
+
+# Closing remarks
+<br>
+
+### Ada excels at pretty much any technical level, it is impressive
+
+<v-click>
+
+- But we need to promote it, market it and showcase it to the world
+  - Use the same marketing techniques and utilise the current trends. Let the world help you
+
+<br>
+</v-click>
+
+<v-click>
+
+### Welcome new people and encourage collaboration and modern practices
+IMHO, there are more people interested in Ada than ever before
+
+</v-click>
+
+<v-click>
+
+### Maintain a healthy relationship between the formal and informal communities
+
+<br>
+</v-click>
+
+<v-click>
+
+### Become more efficient, dynamic, bolder... younger?
+
+More proactive, less complacent?
+
+</v-click>
+
+
+---
+layout: center
+class: text-center
+---
+
+# Thank you!
+
+## Comments? Critics?
+
+Fernando Oleo Blanco -/- [irvise@irvise.xyz](mailto:irvise@irvise.xyz)

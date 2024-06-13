@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('Mona-Sans.woff2') format('woff2 supports variations'),
+    url('Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: 'Monaspace Neon';
+  src:
+    url('MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2 supports variations'),
+    url('MonaspaceNeonVarVF[wght,wdth,slnt].woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+    font-family: 'Tangerine Bold';
+    src: url('Tangerine-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Fleur De Leah';
+    src: url('FleurDeLeah-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Italianno';
+    src: url('Italianno-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Hina Mincho Regular';
+    src: url('Hina-Mincho-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Unifraktur Maguntia Regular';
+    src: url('UnifrakturMaguntia.ttf');
+}
+
+@font-face {
+    font-family: 'Venusta';
+    src: url('Venusta.ttf');
+}
+
+@font-face {
+    font-family: 'Grandiflora One';
+    src: url('GrandifloraOne-Regular.woff2');
+	/* https://github.com/JAMO-TYPEFACE/Grandiflora/tree/main */
+}
+
+@font-face {
+    font-family: 'Amstelvar Roman';
+    src: url('Amstelvar-Roman.ttf') format("truetype-variations");
+
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src:
+    url('JosefinSlab-Italic-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('JosefinSlab-Italic-VariableFont_wght.ttf') format('truetype-variations');
+  font-style: italic;
+  font-weight: 100 700;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  src:
+    url('JosefinSlab-VariableFont_wght.ttf') format('truetype supports variations'),
+    url('JosefinSlab-VariableFont_wght.ttf') format('truetype-variations');
+  font-style: normal;
+  font-weight: 100 700;
+}
+
+@font-face {
+  font-family: 'Amiri Quran';
+  src: url('AmiriQuran-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('JetBrainsMono-Italic[wght].ttf') format('truetype supports variations'),
+    url('JetBrainsMono-Italic[wght].ttf') format('truetype-variations');
+  font-style: italic;
+  font-weight: 100 800;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src:
+    url('JetBrainsMono[wght].ttf') format('truetype supports variations'),
+    url('JetBrainsMono[wght].ttf') format('truetype-variations');
+  font-style: normal;
+  font-weight: 100 800;
+}
+
+@font-face {
+  font-family: 'Science Gothic';
+  src:
+    url('ScienceGothic[YOPQ,sint,wdth,wght].ttf') format('truetype supports variations'),
+    url('ScienceGothic[YOPQ,sint,wdth,wght].ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-stretch: 50 200;
+  font-contrast: 18 122;
+  font-slant: -10 0;
+}
+
+@font-face {
+  font-family: 'Amstelvar';
+  src:
+    url('Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf') format('truetype supports variations'),
+    url('Amstelvar-Italic[GRAD,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf') format('truetype-variations');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Amstelvar';
+  src:
+    url('Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf') format('truetype supports variations'),
+    url('Amstelvar-Roman[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,wdth,wght,opsz].ttf') format('truetype-variations');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inconsolata';
+  src:
+    url('Inconsolata-VF.ttf') format('truetype supports variations'),
+    url('Inconsolata-VF.ttf') format('truetype-variations');
+}
+
+@font-face {
+  font-family: 'STIX2';
+  src:
+    url('STIXTwoText[wght].woff2') format('woff2 supports variations'),
+    url('STIXTwoText[wght].woff2') format('woff2-variations');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'STIX2';
+  src:
+    url('STIXTwoText-Italic[wght].woff2') format('woff2 supports variations'),
+    url('STIXTwoText-Italic[wght].woff2') format('woff2-variations');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src:
+    url('DMSans-VariableFont_opsz,wght.ttf') format('truetype supports variations'),
+    url('DMSans-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src:
+    url('DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype supports variations'),
+    url('DMSans-Italic-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Kreadon';
+  src:
+    url('Kreadon[ital,wght].woff2') format('woff2 supports variations'),
+    url('Kreadon[ital,wght].woff2') format('woff2-variations');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Junicode';
+  src:
+    url('JunicodeVF-Roman.woff2') format('woff2 supports variations'),
+    url('JunicodeVF-Roman.woff2') format('woff2-variations');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Junicode';
+  src:
+    url('JunicodeVF-Italic.woff2') format('woff2 supports variations'),
+    url('JunicodeVF-Italic.woff2') format('woff2-variations');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Libertinus Sans';
+  src:
+    url('LibertinusSans-Italic.woff2') format('woff2'),
+    url('LibertinusSans-Italic.woff2') format('woff2');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Libertinus Sans';
+  src:
+    url('LibertinusSans-Regular.woff2') format('woff2'),
+    url('LibertinusSans-Regular.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'In die busillis';
+  src:
+    url('In die busillis.woff2') format('woff2'),
+    url('In die busillis.woff2') format('woff2');
+  font-style: normal;
+}
